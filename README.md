@@ -36,21 +36,21 @@ For each model–dataset pair, the pipeline extracts:
 
 #### Key outputs / figures (stored in `images/`):
 - `images/STT_Models_Error_eu.png` → WER per model and dataset (bar plot)
-  <img width="1004" height="1790" alt="STT_Models_Error_eu" src="https://github.com/user-attachments/assets/297060b8-68c9-4ca6-8c60-e1bcee2ffa68" />
+- <img width="400" height="1000" alt="STT_Models_Error_eu" src="https://github.com/user-attachments/assets/297060b8-68c9-4ca6-8c60-e1bcee2ffa68" />
 
 - `images/STT_Models_Error_Histograms_es.png` → WER distribution histograms
-<img width="1790" height="790" alt="STT_Models_Error_Histograms_es" src="https://github.com/user-attachments/assets/e46badb8-1df6-476c-8a1f-e3da6b91af49" />
+<img width="700" height="500" alt="STT_Models_Error_Histograms_es" src="https://github.com/user-attachments/assets/e46badb8-1df6-476c-8a1f-e3da6b91af49" />
   
 - `images/WER_vs_Duration_Three_Models_Heatmap.png` → WER as a function of audio duration
 <img width="1800" height="600" alt="WER_vs_Duration_Three_Models_Heatmap" src="https://github.com/user-attachments/assets/502296f1-3d78-4459-937f-e3272955a6ad" />
 
   
 - `images/WER_vs_Words_in_Reference_DeepSpeech_Whisper_no_LM.png` → WER vs. number of words in the reference
-<img width="1000" height="1200" alt="WER_vs_Words_in_Reference_DeepSpeech_Whisper_no_LM" src="https://github.com/user-attachments/assets/b15d4eef-952a-4eed-981d-02185b6637ed" />
+<img width="500" height="700" alt="WER_vs_Words_in_Reference_DeepSpeech_Whisper_no_LM" src="https://github.com/user-attachments/assets/b15d4eef-952a-4eed-981d-02185b6637ed" />
 
   
 - `images/hallucination_percent_comparison.png` → Hallucination-heavy output percentages (LM vs no-LM)
-  <img width="1200" height="800" alt="hallucination_percent_comparison" src="https://github.com/user-attachments/assets/c85bca2f-3379-45b3-a76f-e8e64d607b35" />
+  <img width="500" height="700" alt="hallucination_percent_comparison" src="https://github.com/user-attachments/assets/c85bca2f-3379-45b3-a76f-e8e64d607b35" />
 
   
 
@@ -73,7 +73,7 @@ We characterize the transcriptions of each dataset before training:
   - parse-tree depth (how nested sentences are)  
   - clauses per sentence and their variability
     
-<img width="1502" height="790" alt="syntactical_metrics_eu" src="https://github.com/user-attachments/assets/76175345-6953-48e3-99f9-795f7bc57219" />
+<img width="700" height="700" alt="syntactical_metrics_eu" src="https://github.com/user-attachments/assets/76175345-6953-48e3-99f9-795f7bc57219" />
 
 
 - **Lexical diversity**  
@@ -85,14 +85,14 @@ We characterize the transcriptions of each dataset before training:
   - MTLD (lexical richness)  
   - RTTR (type–token ratio with length normalisation)
  
-  <img width="850" height="547" alt="RTTR_metrics_eu_DeepSpeech" src="https://github.com/user-attachments/assets/b9e93e4b-d40e-4564-a153-d0250d6017e6" />
+  <img width="600" height="500" alt="RTTR_metrics_eu_DeepSpeech" src="https://github.com/user-attachments/assets/b9e93e4b-d40e-4564-a153-d0250d6017e6" />
 
 
 - **Part-of-Speech profiles**  
   `images/morphology_metrics_eu.png` shows PoS distributions  
   (nouns, verbs, auxiliaries…) to see whether a dataset is full of entities, actions, or more “function words”.
 
-  <img width="1487" height="790" alt="morphology_metrics_eu" src="https://github.com/user-attachments/assets/b9742e1f-e06d-44d9-96bc-5ce5b6a284e4" />
+  <img width="700" height="900" alt="morphology_metrics_eu" src="https://github.com/user-attachments/assets/b9742e1f-e06d-44d9-96bc-5ce5b6a284e4" />
 
 
 These metrics let us see which datasets are linguistically simple (short, repetitive, limited vocabulary) vs. complex (long, nested sentences with rich vocabulary and many unique words).
@@ -111,9 +111,9 @@ We also analyse the **audio recordings themselves** to understand how hard they 
   - how variable their duration is  
   - how often speakers pause and for how long
 
- <img width="1489" height="790" alt="time_duration_metrics_eu" src="https://github.com/user-attachments/assets/4ecc6224-8a37-4210-9452-1dca24f54324" />
+ <img width="700" height="900" alt="time_duration_metrics_eu" src="https://github.com/user-attachments/assets/4ecc6224-8a37-4210-9452-1dca24f54324" />
 
- <img width="1747" height="790" alt="pauses_metrics_eu" src="https://github.com/user-attachments/assets/c80feaec-779c-492f-beb0-6d40070e1f94" />
+ <img width="700" height="900" alt="pauses_metrics_eu" src="https://github.com/user-attachments/assets/c80feaec-779c-492f-beb0-6d40070e1f94" />
 
 
     
@@ -122,14 +122,14 @@ We also analyse the **audio recordings themselves** to understand how hard they 
   - `images/volume_metrics.png`  
   shows mean volume (in dB) and its variability, to detect datasets with very uneven levels that can confuse models.
 
-<img width="1264" height="590" alt="volume_metrics" src="https://github.com/user-attachments/assets/95af5fc9-1610-4249-a7c4-aab6510d4489" />
+<img width="700" height="900" alt="volume_metrics" src="https://github.com/user-attachments/assets/95af5fc9-1610-4249-a7c4-aab6510d4489" />
 
 
 - **Pitch & sample rate**  
   - `images/pitch_metrics_eu.png`  
   summarizes mean pitch and pitch variability per corpus and checks whether sample rates are already high enough for ASR (≥16 kHz).
 
-<img width="1487" height="790" alt="pitch_metrics_eu" src="https://github.com/user-attachments/assets/8b4a9536-524f-4723-ad43-169569f532d3" />
+<img width="700" height="900" alt="pitch_metrics_eu" src="https://github.com/user-attachments/assets/8b4a9536-524f-4723-ad43-169569f532d3" />
 
 
 This side of the analysis tells us which datasets have **clean, consistent recordings** vs. those with **noisy, variable, or very long/uneven audio**, which usually make recognition harder.
